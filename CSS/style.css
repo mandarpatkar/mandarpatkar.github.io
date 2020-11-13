@@ -1,0 +1,128 @@
+
+/* Fonts Family */
+@font-face {
+	font-family: Android;
+	src: url(https://mandarpatkar.github.io/Fonts/Android.ttf);
+}
+
+.android {
+	font-family: Android;
+}
+/* Fonts Family End */
+
+
+/* Custom CSS */
+.sidenav {
+	z-index: 1;
+	display: none;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #050505;
+	transition: 0.5s;
+}
+.nav-header {
+	margin: 0 2rem 0 2rem;
+	border-radius: 4px;
+	font-size: 2.5rem;
+	background-color: #111;
+	color: white;
+}
+.repo-list {
+	padding: 1rem 5rem 1rem 5rem;
+}
+.repo a , a.closebtn , .contact a {
+	display: inline;
+	padding: 0;
+	text-decoration: none;
+	color: #818181;
+	transition: 0.3s;
+}
+.repo a {
+	display: block;
+	padding: 0.25rem;
+	font-size: 1.75rem;
+}
+.sidenav .closebtn  {
+	font-size: 4rem;
+}
+.contact a {
+	font-size: 2.5rem;
+}
+.repo a:hover , a.closebtn:hover , .contact a:hover {
+	color: #F1F1F1;
+}
+.openbtn {
+	cursor: pointer;
+	font-size: 2.75rem;
+	color: #ECEFF1;
+}
+
+body {
+	margin: 2rem 0 2rem 0;
+	height: 100%;
+	background-color: #050505;
+}
+.container-main {
+	padding: 2rem;
+}
+.title {
+	padding: 0.25rem;
+	font-size: 2.75rem;
+	color: #CEEAFF;
+}
+.about {
+	padding: 0.25rem;
+	font-size: 2rem;
+	color: #888888;
+}
+.contact {
+	padding: 1rem;
+}
+/* Custom CSS End */
+
+
+/* Responsiveness */
+@media screen and (max-width: 1024px){
+	.title {
+		font-size: 2.5rem;
+	}
+	.about {
+		font-size: 1.75rem;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.nav-header {
+		font-size: 1.75rem;
+	}
+	.repo a , .about {
+		font-size: 1.5rem;
+	}
+	.openbtn , .title {
+		font-size: 2.25rem;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.nav-header {
+		margin: 0 1rem 0 1rem;
+	}
+	.repo-list {
+		padding: 1rem 2rem 1rem 2rem;
+	}
+	.repo a , .about {
+		font-size: 1.25rem;
+	}
+	.container-main {
+		padding: 0.5rem;
+	}
+	.title {
+		font-size: 1.75rem;
+	}
+}
+/* Responsiveness End */
